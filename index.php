@@ -16,16 +16,19 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
             <h3 class="text-center">How Much Will You Save?</h3>
-            <p class="text-center">Selling price: <input type="text"
-                                                         name="selling_price"
-                                                         id="sellingPrice"
-                                                         value="0"
-                                                         oninput="calcFee()"
-                                                    ></p>
+            <p class="text-center">Selling price:</p>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                    <div class="input-group col-xs-12 col-md-5 col-md-offset-4">
+                        <div class="input-group-addon">$</div>
+                        <input type="text" class="form-control" id="sellingPrice" placeholder="Amount" oninput="calcFee()">
+                <div class="input-group-addon">.00</div>
+                </div>
             <hr>
             </div>
         </div>
 
+        </div>
         <div class="row text-center">
             <div class="col-xs-12 col-md-4 col-md-offset-2">
                 <h3 class="underline">Perfect Realty</h3>
